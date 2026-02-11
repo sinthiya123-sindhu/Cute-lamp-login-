@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e1f29, #111219);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Lamp */
+.lamp{
+    position: relative;
+    width: 120px;
+    height: 180px;
+    background: #d8c6c6;
+    border-radius: 60px 60px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    transition: 0.4s ease;
+}
+
+/* Glow effect */
+.lamp.active{
+    background: #fff3b0;
+    box-shadow: 0 0 40px #ffd54f,
+                0 0 80px #ffeb3b;
+}
+
+/* Lamp stand */
+.lamp::after{
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    width: 10px;
+    height: 50px;
+    background: #ffffff;
+}
+
+.lamp::before{
+    content: '';
+    position: absolute;
+    bottom: -70px;
+    width: 60px;
+    height: 20px;
+    background: #cccccc;
+    border-radius: 50%;
+}
+
+/* Login Card */
+.card{
+    width: 320px;
+    padding: 40px 30px;
+    background: #1f2230;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #ff4da6;
+    text-align: center;
+}
+
+.card h2{
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.input-group{
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label{
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    background: #2c2f3f;
+    color: #ffffff;
+    outline: none;
+}
+
+.input-group input:focus{
+    box-shadow: 0 0 10px #ff4da6;
+}
+
+.login-btn{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    background: linear-gradient(135deg, #ff4da6, #ff0080);
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff4da6;
+}
+
+.forgot{
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+.forgot:hover{
+    color: #ff4da6;
+  }
