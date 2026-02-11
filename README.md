@@ -13,7 +13,7 @@ A fun login page with a glowing emoji lamp (😊) built with HTML, CSS, and Java
 - JavaScript
 
 ## 🚀 Live Demo
-[View Demo](https://sinthiya123-sindhu.github.io/cute-lamp-login/)
+[View Demo](//https://github.com/sinthiya123-sindhu.io/cute-lamp-login/)
 
 ---
 
